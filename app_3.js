@@ -34,7 +34,7 @@ const hashCaps = document.querySelector('.hash__caps__div');
 
 function addProducts(userSearch) {
 
-    console.log("User search is: ", userSearch);
+    console.log("User search is again: ", userSearch);
 
     switch (userSearch) {
         case 'Matrix Caps':
