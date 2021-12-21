@@ -91,7 +91,7 @@ bigSearchInput.addEventListener('keydown', (event) => {
         if (location.pathname !== "/Websites/Website%203/search.html") {
             bringToSearchPage();
         }
-        console.log("User Answer is: ", bigUserAnswer);
+        console.log("User Big Answer is: ", bigUserAnswer);
         addProducts(bigUserAnswer);
     }
 });
