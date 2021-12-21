@@ -58,7 +58,7 @@ function addProducts(userSearch) {
 }
 
 function bringToSearchPage() {
-    location.replace("./search.html");
+    location.replace("https://davidriverascode.github.io/datacaps/search.html");
 }
 
 const searchInput = document.querySelector('.search__input');
@@ -70,11 +70,11 @@ searchInput.addEventListener('keydown', (event) => {
         searchValue = document.querySelector('.search__input').value;
         console.log("The value when enter was pressed is: ", searchValue);
         userAnswer = searchValue;
-        if (location.pathname !== "/Websites/Website%203/search.html") {
-            bringToSearchPage();
-        }
         console.log("User Answer is: ", userAnswer);
         addProducts(userAnswer);
+        if (location.pathname !== "https://davidriverascode.github.io/datacaps/search.html") {
+            bringToSearchPage();
+        }
     }
 });
 
