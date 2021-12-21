@@ -88,6 +88,9 @@ bigSearchInput.addEventListener('keydown', (event) => {
         bigSearchValue = document.querySelector('.big__search__input').value;
         console.log("The value when enter was pressed is: ", bigSearchValue);
         bigUserAnswer = bigSearchValue;
+        if (location.pathname !== "/Websites/Website%203/search.html") {
+            bringToSearchPage();
+        }
         console.log("User Answer is: ", bigUserAnswer);
         addProducts(bigUserAnswer);
     }
